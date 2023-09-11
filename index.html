@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body dir="rtl" lang="ar">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">القائمة</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-2">
+            <div class="logo position-relative text-center mt-xl-0 mt-3">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="header-links p-4 flex-column d-flex gap-4 justify-content-around mx-auto">
+                <a class="d-flex gap-3 align-items-center nav-link" href="">
+                    <img src="images/user.svg" alt="">
+                    <div class="mt-1">
+                        حساب المستخدم
+                    </div>
+                </a>
+                <a class="d-flex gap-3 align-items-center nav-link" href="">
+                    <img src="images/search.svg" alt="">
+                    <div class="mt-1">
+                        البحث
+                    </div>
+                </a>
+                <a class="d-flex gap-3 align-items-center nav-link" href="">
+                    <img src="images/world.svg" alt="">
+                    <div class="mt-1">
+                        اللغات
+                    </div>
+                </a>
+            </div>
+            <div class="side-bar offcanvas-bar d-flex flex-column  justify-content-between w-fit white-clr">
+                <div class="links d-flex flex-column align-items-center">
+                    <a href="index.html" class="nav-link text-center active w-100 p-35">
+                        <svg id="icons8_home_1" xmlns="http://www.w3.org/2000/svg" width="24.926" height="21.53"
+                            viewBox="0 0 24.926 21.53">
+                            <path id="icons8_home_1-2" data-name="icons8_home_1"
+                                d="M13.123,1.32.66,12.888l1.154,1.247,1.121-1.041V22.85h8.49V14.36h3.4v8.49h8.49V13.094l1.121,1.041,1.154-1.247Zm0,2.308,8.49,7.893v9.631H16.519v-8.49H9.727v8.49H4.633V11.522Z"
+                                transform="translate(-0.66 -1.32)" fill="#cf2a45" />
+                        </svg>
+                    </a>
+
+                    <a href="mobile.html" class="nav-link text-center  w-100 p-35">
+                        <svg id="icons8_android" xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074"
+                            viewBox="0 0 15.282 22.074">
+                            <path id="icons8_android-2" data-name="icons8_android"
+                                d="M5.547,1A2.556,2.556,0,0,0,3,3.547v16.98a2.556,2.556,0,0,0,2.547,2.547H15.735a2.556,2.556,0,0,0,2.547-2.547V3.547A2.556,2.556,0,0,0,15.735,1Zm0,1.7H15.735a.838.838,0,0,1,.849.849v16.98a.838.838,0,0,1-.849.849H5.547a.838.838,0,0,1-.849-.849V3.547A.838.838,0,0,1,5.547,2.7ZM9.792,17.98v1.7h1.7v-1.7Z"
+                                transform="translate(-3 -1)" fill="#392c23" />
+                        </svg>
+                    </a>
+
+                    <a href="contact.html" class="nav-link text-center w-100 p-35">
+                        <svg id="icons8_telephone" xmlns="http://www.w3.org/2000/svg" width="22.074" height="20.376"
+                            viewBox="0 0 22.074 20.376">
+                            <path id="icons8_telephone-2" data-name="icons8_telephone"
+                                d="M12.037,2c-.929,0-1.764.033-2.547.08V2.066c-.06,0-.113.013-.172.013a25.44,25.44,0,0,0-5.724.9A3.811,3.811,0,0,0,1.822,4.189,3.206,3.206,0,0,0,1,6.245V8.792H6.107l.073-.769A7.961,7.961,0,0,1,6.8,5.781,4.037,4.037,0,0,1,7.832,4.355a2.352,2.352,0,0,1,1.141-.544c.113-.007.192-.02.312-.033.007,0,.013.007.02,0,.816-.046,1.725-.08,2.733-.08s1.917.033,2.733.08c.007.007.013,0,.02,0,.027.007.053.007.086.013.08,0,.146.013.226.02a2.352,2.352,0,0,1,1.141.544,4.035,4.035,0,0,1,1.035,1.426,7.959,7.959,0,0,1,.617,2.242l.066.769h5.114V6.245a3.206,3.206,0,0,0-.823-2.056A3.811,3.811,0,0,0,20.48,2.982a25.441,25.441,0,0,0-5.724-.9c-.06,0-.113-.013-.172-.013V2.08C13.8,2.033,12.965,2,12.037,2ZM5.742,4.222a6.983,6.983,0,0,0-.484.856A5.848,5.848,0,0,0,4.7,7.094h-2V6.245a1.618,1.618,0,0,1,.424-.962,2.214,2.214,0,0,1,.968-.67A16.291,16.291,0,0,1,5.742,4.222Zm12.589,0a16.925,16.925,0,0,1,1.658.391,2.235,2.235,0,0,1,.962.67,1.618,1.618,0,0,1,.424.962v.849h-2a5.952,5.952,0,0,0-.55-2.016A8.044,8.044,0,0,0,18.331,4.222ZM7.792,8.792v1.8l-.08.053a18.457,18.457,0,0,0-2.454,2.242c-1.234,1.34-2.56,3.151-2.56,5.24v1.7a2.556,2.556,0,0,0,2.547,2.547H18.829a2.556,2.556,0,0,0,2.547-2.547v-1.7c0-2.089-1.326-3.9-2.554-5.24a18.736,18.736,0,0,0-2.461-2.242l-.08-.053v-1.8h-1.7v1.7H9.49v-1.7Zm.743,3.4h7a14.675,14.675,0,0,1,2.023,1.844c1.108,1.207,2.116,2.792,2.116,4.1v1.7a.838.838,0,0,1-.849.849H5.245a.838.838,0,0,1-.849-.849v-1.7c0-1.307,1.008-2.892,2.109-4.1A14.959,14.959,0,0,1,8.535,12.188Zm-.743,1.7v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm-6.792,3.4v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Z"
+                                transform="translate(-1 -2)" fill="#392c23" />
+                        </svg>
+                    </a>
+
+                    <a href="ask.html" class="nav-link text-center w-100 p-35">
+                        <svg id="icons8_help_2" xmlns="http://www.w3.org/2000/svg" width="22.074" height="22.074"
+                            viewBox="0 0 22.074 22.074">
+                            <path id="icons8_help_2-2" data-name="icons8_help_2"
+                                d="M12.037,1A11.037,11.037,0,1,1,1,12.037,11.054,11.054,0,0,1,12.037,1Zm0,1.7a9.339,9.339,0,1,0,9.339,9.339A9.327,9.327,0,0,0,12.037,2.7Zm-.1,3.4a3.979,3.979,0,0,1,3.734,3.94h-1.7a2.226,2.226,0,0,0-2.653-2.209A2.3,2.3,0,0,0,9.49,10.1,2.068,2.068,0,0,0,10.876,12a4.052,4.052,0,0,1,1.386.862,2.5,2.5,0,0,1,.623,1.725h-1.7c0-.385-.053-.444-.159-.557a3.135,3.135,0,0,0-.836-.478,3.859,3.859,0,0,1-2.4-3.4,3.961,3.961,0,0,1,3.243-4.006A4.639,4.639,0,0,1,11.937,6.094Zm.948,10.188v1.7h-1.7v-1.7Z"
+                                transform="translate(-1 -1)" fill="#392c23" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="info d-flex gap-3 align-items-center flex-column mb-3">
+                    <div class="text-black copyright">
+                        جميع الحقوق محفوظة لدى <span class="main-clr">بلدية غزة</span> &copy; 2021
+                    </div>
+
+                    <div class="social-links d-flex gap-1 flex-column">
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-twitter text-white fa-lg "></i>
+                        </a>
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-instagram text-white fa-lg "></i>
+                        </a>
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-facebook text-white fa-lg "></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main d-flex">
+        <!-- side bar starts    -->
+        <div class="side-bar d-flex flex-column  justify-content-between w-fit white-clr">
+            <div class="links d-flex flex-column align-items-center">
+
+                <a href="index.html" class="nav-link text-center active w-100 p-35">
+                    <svg id="icons8_home_1" xmlns="http://www.w3.org/2000/svg" width="24.926" height="21.53"
+                        viewBox="0 0 24.926 21.53">
+                        <path id="icons8_home_1-2" data-name="icons8_home_1"
+                            d="M13.123,1.32.66,12.888l1.154,1.247,1.121-1.041V22.85h8.49V14.36h3.4v8.49h8.49V13.094l1.121,1.041,1.154-1.247Zm0,2.308,8.49,7.893v9.631H16.519v-8.49H9.727v8.49H4.633V11.522Z"
+                            transform="translate(-0.66 -1.32)" fill="#cf2a45" />
+                    </svg>
+                </a>
+
+                <a href="mobile.html" class="nav-link text-center  w-100 p-35">
+                    <svg id="icons8_android" xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074"
+                        viewBox="0 0 15.282 22.074">
+                        <path id="icons8_android-2" data-name="icons8_android"
+                            d="M5.547,1A2.556,2.556,0,0,0,3,3.547v16.98a2.556,2.556,0,0,0,2.547,2.547H15.735a2.556,2.556,0,0,0,2.547-2.547V3.547A2.556,2.556,0,0,0,15.735,1Zm0,1.7H15.735a.838.838,0,0,1,.849.849v16.98a.838.838,0,0,1-.849.849H5.547a.838.838,0,0,1-.849-.849V3.547A.838.838,0,0,1,5.547,2.7ZM9.792,17.98v1.7h1.7v-1.7Z"
+                            transform="translate(-3 -1)" fill="#392c23" />
+                    </svg>
+                </a>
+
+                <a href="contact.html" class="nav-link text-center w-100 p-35">
+                    <svg id="icons8_telephone" xmlns="http://www.w3.org/2000/svg" width="22.074" height="20.376"
+                        viewBox="0 0 22.074 20.376">
+                        <path id="icons8_telephone-2" data-name="icons8_telephone"
+                            d="M12.037,2c-.929,0-1.764.033-2.547.08V2.066c-.06,0-.113.013-.172.013a25.44,25.44,0,0,0-5.724.9A3.811,3.811,0,0,0,1.822,4.189,3.206,3.206,0,0,0,1,6.245V8.792H6.107l.073-.769A7.961,7.961,0,0,1,6.8,5.781,4.037,4.037,0,0,1,7.832,4.355a2.352,2.352,0,0,1,1.141-.544c.113-.007.192-.02.312-.033.007,0,.013.007.02,0,.816-.046,1.725-.08,2.733-.08s1.917.033,2.733.08c.007.007.013,0,.02,0,.027.007.053.007.086.013.08,0,.146.013.226.02a2.352,2.352,0,0,1,1.141.544,4.035,4.035,0,0,1,1.035,1.426,7.959,7.959,0,0,1,.617,2.242l.066.769h5.114V6.245a3.206,3.206,0,0,0-.823-2.056A3.811,3.811,0,0,0,20.48,2.982a25.441,25.441,0,0,0-5.724-.9c-.06,0-.113-.013-.172-.013V2.08C13.8,2.033,12.965,2,12.037,2ZM5.742,4.222a6.983,6.983,0,0,0-.484.856A5.848,5.848,0,0,0,4.7,7.094h-2V6.245a1.618,1.618,0,0,1,.424-.962,2.214,2.214,0,0,1,.968-.67A16.291,16.291,0,0,1,5.742,4.222Zm12.589,0a16.925,16.925,0,0,1,1.658.391,2.235,2.235,0,0,1,.962.67,1.618,1.618,0,0,1,.424.962v.849h-2a5.952,5.952,0,0,0-.55-2.016A8.044,8.044,0,0,0,18.331,4.222ZM7.792,8.792v1.8l-.08.053a18.457,18.457,0,0,0-2.454,2.242c-1.234,1.34-2.56,3.151-2.56,5.24v1.7a2.556,2.556,0,0,0,2.547,2.547H18.829a2.556,2.556,0,0,0,2.547-2.547v-1.7c0-2.089-1.326-3.9-2.554-5.24a18.736,18.736,0,0,0-2.461-2.242l-.08-.053v-1.8h-1.7v1.7H9.49v-1.7Zm.743,3.4h7a14.675,14.675,0,0,1,2.023,1.844c1.108,1.207,2.116,2.792,2.116,4.1v1.7a.838.838,0,0,1-.849.849H5.245a.838.838,0,0,1-.849-.849v-1.7c0-1.307,1.008-2.892,2.109-4.1A14.959,14.959,0,0,1,8.535,12.188Zm-.743,1.7v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm-6.792,3.4v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Z"
+                            transform="translate(-1 -2)" fill="#392c23" />
+                    </svg>
+                </a>
+
+                <a href="ask.html" class="nav-link text-center w-100 p-35">
+                    <svg id="icons8_help_2" xmlns="http://www.w3.org/2000/svg" width="22.074" height="22.074"
+                        viewBox="0 0 22.074 22.074">
+                        <path id="icons8_help_2-2" data-name="icons8_help_2"
+                            d="M12.037,1A11.037,11.037,0,1,1,1,12.037,11.054,11.054,0,0,1,12.037,1Zm0,1.7a9.339,9.339,0,1,0,9.339,9.339A9.327,9.327,0,0,0,12.037,2.7Zm-.1,3.4a3.979,3.979,0,0,1,3.734,3.94h-1.7a2.226,2.226,0,0,0-2.653-2.209A2.3,2.3,0,0,0,9.49,10.1,2.068,2.068,0,0,0,10.876,12a4.052,4.052,0,0,1,1.386.862,2.5,2.5,0,0,1,.623,1.725h-1.7c0-.385-.053-.444-.159-.557a3.135,3.135,0,0,0-.836-.478,3.859,3.859,0,0,1-2.4-3.4,3.961,3.961,0,0,1,3.243-4.006A4.639,4.639,0,0,1,11.937,6.094Zm.948,10.188v1.7h-1.7v-1.7Z"
+                            transform="translate(-1 -1)" fill="#392c23" />
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="info d-flex gap-3 align-items-center flex-column mb-3">
+                <div class="text-black copyright">
+                    جميع الحقوق محفوظة لدى <span class="main-clr">بلدية غزة</span> &copy; 2021
+                </div>
+
+                <div class="social-links d-flex gap-1 flex-column">
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-twitter text-white fa-lg "></i>
+                    </a>
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-instagram text-white fa-lg "></i>
+                    </a>
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-facebook text-white fa-lg "></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-xl-block d-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="703.139" viewBox="0 0 12 703.139">
+                <path id="Union_27" data-name="Union 27"
+                    d="M0,703.136v-1.368l12-11.632v1.371L0,703.137l0,0Zm0-4.113v-1.368l12-11.632v1.371L0,699.025l0,0Zm0-4.113v-1.368l12-11.632v1.37L0,694.912l0,0ZM0,690.8V689.43L12,677.8v1.371L0,690.8l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,686.687l0,0Zm0-4.113V681.2l12-11.632v1.371L0,682.574l0,0Zm0-4.113v-1.369L12,665.46v1.371L0,678.462l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,674.349l0,0Zm0-4.112v-1.369l12-11.632v1.371L0,670.237l0,0Zm0-4.113v-1.369l12-11.632v1.372L0,666.124l0,0Zm0-4.037v-1.445L12,649.01v1.447L0,662.087l0,0Zm0-4.113v-1.445l11.944-11.578H12v1.393L0,657.975l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,640.861v1.37L0,653.862l0,0Zm0-4.113V648.3l3.459-3.353h.079l8.462-8.2v1.371L0,649.75l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,645.637l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,641.524l0,0Zm0-4.113v-1.369L12,624.41v1.372L0,637.412l0,0ZM0,633.3v-1.369L12,620.3v1.371L0,633.3l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,629.187l0,0Zm0-4.113V623.7l12-11.631v1.371L0,625.074l0,0Zm0-4.113v-1.369L12,607.96v1.371L0,620.961l0,0Zm0-4.1v-1.385L11.944,603.9h.017l.039-.038v1.371L0,616.865H0Zm0-4.113v-1.384L7.7,603.9h.017L12,599.751v1.371L0,612.752l0,0Zm0-4.112v-1.385L3.459,603.9h.017L12,595.638v1.371L0,608.639l0,0Zm0-4.113v-1.368l12-11.632V592.9L0,604.527l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,600.414l0,0ZM0,596.3v-1.369L12,583.3v1.372L0,596.3l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,592.189l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,588.076l0,0Zm0-4.113v-1.369l12-11.632v1.372L0,583.964l0,0Zm0-4.113v-1.369L12,566.85v1.371L0,579.851l0,0Zm0-4.037v-1.445l12-11.632v1.447L0,575.815l0,0ZM0,571.7v-1.445l11.944-11.578H12v1.393L0,571.7l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,554.589v1.371L0,567.589l0,0Zm0-4.113v-1.445l3.459-3.353h.079l8.462-8.2v1.371L0,563.477l0,0Zm0-4.113v-1.369l12-11.632v1.372L0,559.364l0,0Zm0-4.113v-1.369L12,542.25v1.371L0,555.252l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,551.139l0,0Zm0-4.113v-1.369l12-11.632V535.4L0,547.026l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,542.914l0,0ZM0,538.8v-1.369L12,525.8v1.371L0,538.8l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,534.689l0,0ZM0,530.6v-1.392l11.944-11.578h.025L12,517.6v1.37L0,530.6l0,0Zm0-4.113v-1.392l7.7-7.465h.025L12,513.486v1.371L0,526.487l0,0Zm0-4.113v-1.392l3.459-3.353h.025L12,509.374v1.371L0,522.374l0,0Zm0-4.113v-1.368l12-11.632v1.371L0,518.262l0,0Zm0-4.113V512.78l12-11.632v1.371L0,514.149l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,510.037l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,505.924l0,0Zm0-4.113v-1.369L12,488.81v1.371L0,501.812l0,0ZM0,497.7v-1.369L12,484.7v1.371L0,497.7l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,493.586l0,0Zm0-4.037V488.1l12-11.632v1.447L0,489.55l0,0Zm0-4.113v-1.445l11.944-11.578H12v1.393L0,485.437l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,468.324v1.371L0,481.324l0,0Zm0-4.113v-1.445l3.459-3.353h.079l8.462-8.2v1.371L0,477.212l0,0ZM0,473.1V471.73L12,460.1v1.371L0,473.1l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,468.987l0,0Zm0-4.113V463.5l12-11.632v1.371L0,464.874l0,0Zm0-4.113v-1.369L12,447.76v1.371L0,460.762l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,456.649l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,452.536l0,0Zm0-4.113v-1.369l12-11.632v1.372L0,448.424l0,0Zm0-4.1v-1.385l11.944-11.578h.017l.039-.037V432.7L0,444.327l0,0Zm0-4.113v-1.385l7.7-7.465h.017L12,427.214v1.371L0,440.214l0,0ZM0,436.1v-1.384l3.459-3.353h.017L12,423.1v1.371L0,436.1l0,0Zm0-4.113V430.62l12-11.632v1.371L0,431.989l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,427.877l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,423.764l0,0Zm0-4.113v-1.369L12,406.65v1.371L0,419.651l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,415.539l0,0Zm0-4.113v-1.369l12-11.632V399.8L0,411.426l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,407.314l0,0Zm0-4.037v-1.445L12,390.2v1.447L0,403.277l0,0Zm0-4.113v-1.445l11.944-11.578H12v1.393L0,399.164l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,382.051v1.371L0,395.052l0,0Zm0-4.113v-1.445l3.459-3.353h.079l8.462-8.2v1.371L0,390.939l0,0Zm0-4.113v-1.369l12-11.632V375.2L0,386.827l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,382.714l0,0ZM0,378.6v-1.369L12,365.6v1.371L0,378.6l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,374.489l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,370.376l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,366.264l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,362.151l0,0Zm0-4.1v-1.377l11.944-11.578h.009l.047-.045v1.371L0,358.046l0,0Zm0-4.113v-1.377l7.7-7.465H7.71L12,340.933V342.3L0,353.934l0,0Zm0-4.113v-1.377l3.459-3.353h.009L12,336.82v1.371L0,349.821l0,0Zm0-4.113V344.34l12-11.632v1.371L0,345.709l0,0ZM0,341.6v-1.369l12-11.632v1.371L0,341.6l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,337.483l0,0Zm0-4.113V332l12-11.632v1.371L0,333.371l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,329.258l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,325.146l0,0Zm0-4.113v-1.369l12-11.632V309.4L0,321.033l0,0ZM0,317v-1.445l12-11.632v1.447L0,317l0,0Zm0-4.113v-1.445L11.944,299.86H12v1.393L0,312.884l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,295.77v1.371L0,308.771l0,0Zm0-4.113v-1.445l3.459-3.353h.079l8.462-8.2v1.371L0,304.659l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,300.546l0,0Zm0-4.113v-1.369l12-11.632V284.8L0,296.433l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,292.321l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,288.208l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,284.1l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,279.983l0,0Zm0-4.113V274.5l12-11.632v1.371L0,275.871l0,0Zm0-4.1v-1.385L11.944,258.81h.017l.039-.038v1.371L0,271.774l0,0Zm0-4.113v-1.385l7.7-7.465h.017L12,254.66v1.371L0,267.661l0,0Zm0-4.113v-1.385l3.459-3.353h.017L12,250.548v1.371L0,263.548l0,0Zm0-4.113v-1.368l12-11.632v1.371L0,259.436l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,255.323l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,251.211l0,0ZM0,247.1v-1.369L12,234.1v1.371L0,247.1l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,242.986l0,0Zm0-4.113V237.5l12-11.632v1.371L0,238.873l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,234.76l0,0Zm0-4.037v-1.445l12-11.632v1.447L0,230.724l0,0Zm0-4.113v-1.445l11.944-11.578H12v1.393L0,226.611l0,0ZM0,222.5v-1.445l7.7-7.465h.079L12,209.5v1.371L0,222.5l0,0Zm0-4.113V216.94l3.459-3.353h.079l8.462-8.2v1.371L0,218.386l0,0Zm0-4.113V212.9l12-11.632v1.371L0,214.273l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,210.161l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,206.048l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,201.936l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,197.823l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,193.71l0,0ZM0,189.6v-1.369L12,176.6v1.371L0,189.6l0,0Zm0-4.089v-1.392l11.944-11.578h.025l.031-.03v1.371L0,185.509l0,0ZM0,181.4V180l7.7-7.465h.025L12,168.4v1.371L0,181.4l0,0Zm0-4.113V175.89l3.459-3.353h.025L12,164.283v1.371L0,177.284l0,0Zm0-4.113V171.8L12,160.17v1.371L0,173.171l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,169.058l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,164.946l0,0Zm0-4.113v-1.369l12-11.632V149.2L0,160.833l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,156.721l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,152.608l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,148.5l0,0Zm0-4.037v-1.445l12-11.632v1.447L0,144.459l0,0Zm0-4.113V138.9l11.944-11.578H12v1.393L0,140.346l0,0Zm0-4.113v-1.445l7.7-7.465h.079L12,123.233V124.6L0,136.234l0,0Zm0-4.113v-1.445l3.459-3.353h.079L12,119.12v1.371L0,132.121l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,128.008l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,123.9l0,0Zm0-4.113v-1.369l12-11.632v1.371L0,119.783l0,0Zm0-4.113V114.3l12-11.632v1.371L0,115.671l0,0Zm0-4.113v-1.369L12,98.556v1.371L0,111.558l0,0Zm0-4.113v-1.369L12,94.444v1.371L0,107.445l0,0Zm0-4.113v-1.369L12,90.331V91.7L0,103.333l0,0Zm0-4.1V97.851L11.944,86.273h.017L12,86.235v1.371L0,99.236l0,0Zm0-4.113V93.738l7.7-7.465h.017L12,82.123v1.371L0,95.123l0,0ZM0,91.01V89.625l3.459-3.353h.017L12,78.01v1.371L0,91.011l0,0ZM0,86.9V85.529L12,73.9v1.371L0,86.9l0,0Zm0-4.113V81.416L12,69.784v1.371L0,82.786l0,0Zm0-4.113V77.3L12,65.671v1.371L0,78.673l0,0ZM0,74.56V73.191L12,61.559V62.93L0,74.56l0,0Zm0-4.113V69.078L12,57.446v1.371L0,70.448l0,0Zm0-4.113V64.966L12,53.334v1.371L0,66.335l0,0Zm0-4.113V60.853L12,49.221v1.371L0,62.223l0,0Zm0-4.037V56.74L12,45.108v1.447L0,58.186l0,0Zm0-4.113V52.628L11.944,41.05H12v1.393L0,54.073l0,0ZM0,49.96V48.515L7.7,41.05h.079L12,36.96v1.371L0,49.961l0,0Zm0-4.113V44.4L3.459,41.05h.079L12,32.847v1.371L0,45.848l0,0Zm0-4.113V40.366L12,28.734v1.371L0,41.736l0,0Zm0-4.113V36.253L12,24.621v1.371L0,37.623l0,0ZM0,33.51V32.141L12,20.509V21.88L0,33.511l0,0ZM0,29.4V28.028L12,16.4v1.371L0,29.4l0,0Zm0-4.113V23.916L12,12.284v1.371L0,25.285l0,0Zm0-4.113V19.8L12,8.171V9.543L0,21.173l0,0Zm0-4.113V15.69L12,4.058V5.43L0,17.06l0,0Zm0-4.113V11.578L11.944,0H12V1.317L0,12.948l0,0ZM0,8.834V7.465L7.7,0H9.116L0,8.835l0,0ZM0,4.722V3.353L3.459,0H4.874L0,4.722l0,0ZM0,.609V0H.631L0,.61l0,0Z"
+                    fill="#d6d6d6" />
+            </svg>
+        </div>
+
+        <!-- main content starts -->
+        <div class="main-content active position-relative">
+
+            <img class="bird-left position-absolute" src="images/bird.svg" alt="">
+            <img class="bird-right position-absolute" src="images/bird.svg" alt="">
+
+            <div class="container-fluid px-0">
+                <div class="container d-xl-none d-flex justify-content-between  align-items-center pt-3">
+                    <button class="btn bg-second text-white position-relative z-2 d-block d-xl-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <div class="mt-1">القائمة</div>
+                    </button>
+                    <div class="dropdown position-relative z-2">
+                        <button class="language me-0 me-xl-3 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            العربية
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item text-center" href="#">العربية</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" href="#">الإنجليزية</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-xl-flex d-none flex-wrap align-items-center position-relative header ">
+                    <div
+                        class="d-flex gap-2 col-xl  justify-content-xl-start justify-content-between align-items-center">
+                        <button class="btn bg-second text-white position-relative z-2 d-block d-xl-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            القائمة
+                        </button>
+                        <div class="header-links d-flex gap-2">
+                            <a href=""><img src="images/user.svg" alt=""></a>
+                            <a href=""><img src="images/search.svg" alt=""></a>
+                            <a href=""><img src="images/world.svg" alt=""></a>
+                        </div>
+
+                        <div class="dropdown position-relative z-2">
+                            <button class="language me-0 me-xl-3 dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                العربية
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item text-center" href="#">العربية</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center" href="#">الإنجليزية</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="logo text-center mt-xl-0 mt-3 col-xl">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <div
+                        class="text-black gap-4 flex-md-row flex-column d-flex mt-xl-0 mt-5 align-items-center col-xl justify-content-xl-end justify-content-center">
+                        <div class="date gap-2 d-flex align-items-center">
+                            <div class=""> الإثنين 1 محرم 1443 - 09 أغسطس 2021 | 11:46 صباحا</div>
+                            <img src="images/clock.svg" alt="">
+                        </div>
+                        <div class="temp gap-2 d-flex align-items-center">
+                            <div>+42°C</div>
+                            <img class="img-fluid" src="images/sun.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container content position-relative z-1  inner-content">
+                <div class="row">
+
+                    <div class="col-xxl-4 col-xl-6 col-12 position-relative">
+                        <div class="d-flex justify-content-between">
+                            <div class="main-clr bold">أخبار اليوم</div>
+                            <div class="text-black-50"> المزيد<span class="bold me-1 fs-5">...</span> </div>
+                        </div>
+
+                        <div class="swiper mySwiper">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="position-relative">
+                                        <img src="images/news.png" alt="" class="img-fluid">
+                                        <div class="text position-absolute">
+                                            <div class="bold text-white">
+                                                09
+                                            </div>
+                                            <div class="bold text-white">
+                                                08
+                                            </div>
+                                            <img class="clockPath" src="images/clock-path.svg" alt="">
+                                            <div class="time text-white ">13:27:03</div>
+                                            <div class="text-white title ">بلدية غزة تفتتح بئر مياه في منطقة
+                                                الشعف شرق حي التفاح</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide ">
+                                    <div class="position-relative">
+                                        <img src="images/news.png" alt="" class="img-fluid">
+                                        <div class="text position-absolute">
+                                            <div class="bold text-white">
+                                                09
+                                            </div>
+                                            <div class="bold text-white">
+                                                08
+                                            </div>
+                                            <img class="clockPath" src="images/clock-path.svg" alt="">
+                                            <div class="time text-white fs-5">13:27:03</div>
+                                            <div class="text-white title fs-5">بلدية غزة تفتتح بئر مياه في منطقة
+                                                الشعف شرق حي التفاح</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="position-relative">
+                                        <img src="images/news.png" alt="" class="img-fluid">
+                                        <div class="text position-absolute">
+                                            <div class="bold text-white">
+                                                09
+                                            </div>
+                                            <div class="bold text-white">
+                                                08
+                                            </div>
+                                            <img class="clockPath" src="images/clock-path.svg" alt="">
+                                            <div class="time text-white fs-5">13:27:03</div>
+                                            <div class="text-white title fs-5">بلدية غزة تفتتح بئر مياه في منطقة
+                                                الشعف شرق حي التفاح</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="position-relative">
+                                        <img src="images/news.png" alt="" class="img-fluid">
+                                        <div class="text position-absolute">
+                                            <div class="bold text-white">
+                                                09
+                                            </div>
+                                            <div class="bold text-white">
+                                                08
+                                            </div>
+                                            <img class="clockPath" src="images/clock-path.svg" alt="">
+                                            <div class="time text-white fs-5">13:27:03</div>
+                                            <div class="text-white title fs-5">بلدية غزة تفتتح بئر مياه في منطقة
+                                                الشعف شرق حي التفاح</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-4 px-xl-3 px-0 col-xl-6 mt-xl-0 mt-5 col-12">
+                        <div class="d-flex justify-content-between">
+                            <div class="main-clr bold">إعلانات البلدية</div>
+                            <div class="text-black-50"> المزيد<span class="bold me-1 fs-5">...</span> </div>
+                        </div>
+
+                        <div class="swiper mySwiper">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="ad bg-white rounded-4">
+                                        <div class="text-black">
+                                            طرح مزاودة بالظرف المختـوم لبيع عدد 5 آليات بأنواع مختلفة
+                                            من دائرة النقل والإمداد التابعة لبلدية غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ad bg-white mt-3 rounded-4">
+                                        <div class="text-black">
+                                            انشاء شبكات صرف صحي في أحياء الزيتون والتفاح
+                                            في مدينة غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="ad bg-white rounded-4">
+                                        <div class="text-black">
+                                            طرح مزاودة بالظرف المختـوم لبيع عدد 5 آليات بأنواع مختلفة
+                                            من دائرة النقل والإمداد التابعة لبلدية غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ad bg-white mt-3 rounded-4">
+                                        <div class="text-black">
+                                            انشاء شبكات صرف صحي في أحياء الزيتون والتفاح
+                                            في مدينة غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="ad bg-white rounded-4">
+                                        <div class="text-black">
+                                            طرح مزاودة بالظرف المختـوم لبيع عدد 5 آليات بأنواع مختلفة
+                                            من دائرة النقل والإمداد التابعة لبلدية غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ad bg-white mt-3 rounded-4">
+                                        <div class="text-black">
+                                            انشاء شبكات صرف صحي في أحياء الزيتون والتفاح
+                                            في مدينة غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="ad bg-white rounded-4">
+                                        <div class="text-black">
+                                            طرح مزاودة بالظرف المختـوم لبيع عدد 5 آليات بأنواع مختلفة
+                                            من دائرة النقل والإمداد التابعة لبلدية غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ad bg-white mt-3 rounded-4">
+                                        <div class="text-black">
+                                            انشاء شبكات صرف صحي في أحياء الزيتون والتفاح
+                                            في مدينة غزة
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-5">
+                                            <div>
+                                                <img src="images/time.svg" alt="">
+                                                <span class="main-clr fs-13">
+                                                    ينتهي الإعلان بتاريخ 15-8-2021
+                                                </span>
+                                            </div>
+                                            <a href="" class="nav-link">
+                                                <div class="text-black fs-13 d-flex gap-2">
+                                                    المزيد
+                                                    <span><img src="images/arrows.svg" alt=""></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div> 
+
+                    </div>
+
+                    <div
+                        class="col-xxl-4 mt-xxl-0 mt-5 justify-content-center justify-content-xxl-start col-12 d-flex position-relative">
+                        <img class="img-fluid" style="height: 375px;" src="images/gps.png" alt="">
+                        <div class="text-gps position-absolute">
+                            <div class="bold main-clr">في غزة</div>
+                            <div class="text-black mt-3">هل تبحث عن مكان (متحف,بنك,مستشفى...) ؟</div>
+                            <a href="" class="btn py-2 bg-main text-white d-flex w-fit gap-2 rounded-2 mt-3">
+
+                                <img src="images/gps.svg" alt="">
+                                <div>استكشاف</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="quick-access position-relative z-1">
+                <div class="text-center main-clr bold">الوصول السريع</div>
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6 col-lg justify-content-lg-center d-flex gap-2 align-items-center">
+
+                            <div class="icon bg-second p-4 rounded-circle">
+                                <img src="images/more_info.svg" alt="">
+                            </div>
+
+                            <div class="text-black">
+                                <a href="" class="nav-link">
+                                    الشكاوى والاستفسارات
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg  mt-md-0 mt-4 justify-content-lg-center d-flex gap-2 align-items-center">
+                            <div class="icon bg-second p-4 rounded-circle">
+                                <img src="images/service.svg" alt="">
+                            </div>
+
+                            <div class="text-black">
+                                <a href="" class="nav-link">
+                                    الخدمات الإلكترونية
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg mt-lg-0 mt-4 justify-content-lg-center d-flex gap-2 align-items-center">
+                            <div class="icon bg-second p-4 rounded-circle">
+                                <img src="images/user_manual.svg" alt="">
+                            </div>
+
+                            <div class="text-black">
+                                <a href="" class="nav-link">
+                                    دليل المعاملات
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg mt-lg-0 mt-4 justify-content-lg-center d-flex gap-2 align-items-center">
+                            <div class="icon bg-second p-4 rounded-circle">
+                                <img src="images/statistics.svg" alt="">
+                            </div>
+
+                            <div class="text-black">
+                                <a href="" class="nav-link">
+                                    مشاريع البلدية
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid sections-link  position-relative z-1 bg-white border-top">
+                <div class="d-flex flex-wrap">
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="municipal.html" class="nav-link text-center py-4 service">البلدية</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">المدينة</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">الخدمات</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">المشاريع</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center  py-4">المركز الإعلامي</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

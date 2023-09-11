@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body dir="rtl" lang="ar">
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">القائمة</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="side-bar offcanvas-bar d-flex flex-column  justify-content-between w-fit white-clr">
+                <div class="links d-flex flex-column align-items-center">
+                    <a href="index.html" class="nav-link text-center w-100 p-35">
+                        <svg id="icons8_home_1" xmlns="http://www.w3.org/2000/svg" width="24.926" height="21.53"
+                            viewBox="0 0 24.926 21.53">
+                            <path id="icons8_home_1-2" data-name="icons8_home_1"
+                                d="M13.123,1.32.66,12.888l1.154,1.247,1.121-1.041V22.85h8.49V14.36h3.4v8.49h8.49V13.094l1.121,1.041,1.154-1.247Zm0,2.308,8.49,7.893v9.631H16.519v-8.49H9.727v8.49H4.633V11.522Z"
+                                transform="translate(-0.66 -1.32)" fill="#392c23" />
+                        </svg>
+                    </a>
+
+                    <a href="mobile.html" class="nav-link text-center w-100 p-35">
+                        <svg id="icons8_android" xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074"
+                            viewBox="0 0 15.282 22.074">
+                            <path id="icons8_android-2" data-name="icons8_android"
+                                d="M5.547,1A2.556,2.556,0,0,0,3,3.547v16.98a2.556,2.556,0,0,0,2.547,2.547H15.735a2.556,2.556,0,0,0,2.547-2.547V3.547A2.556,2.556,0,0,0,15.735,1Zm0,1.7H15.735a.838.838,0,0,1,.849.849v16.98a.838.838,0,0,1-.849.849H5.547a.838.838,0,0,1-.849-.849V3.547A.838.838,0,0,1,5.547,2.7ZM9.792,17.98v1.7h1.7v-1.7Z"
+                                transform="translate(-3 -1)" fill="#392c23" />
+                        </svg>
+                    </a>
+
+                    <a href="contact.html" class="nav-link text-center  w-100 p-35">
+                        <svg id="icons8_telephone" xmlns="http://www.w3.org/2000/svg" width="22.074" height="20.376"
+                            viewBox="0 0 22.074 20.376">
+                            <path id="icons8_telephone-2" data-name="icons8_telephone"
+                                d="M12.037,2c-.929,0-1.764.033-2.547.08V2.066c-.06,0-.113.013-.172.013a25.44,25.44,0,0,0-5.724.9A3.811,3.811,0,0,0,1.822,4.189,3.206,3.206,0,0,0,1,6.245V8.792H6.107l.073-.769A7.961,7.961,0,0,1,6.8,5.781,4.037,4.037,0,0,1,7.832,4.355a2.352,2.352,0,0,1,1.141-.544c.113-.007.192-.02.312-.033.007,0,.013.007.02,0,.816-.046,1.725-.08,2.733-.08s1.917.033,2.733.08c.007.007.013,0,.02,0,.027.007.053.007.086.013.08,0,.146.013.226.02a2.352,2.352,0,0,1,1.141.544,4.035,4.035,0,0,1,1.035,1.426,7.959,7.959,0,0,1,.617,2.242l.066.769h5.114V6.245a3.206,3.206,0,0,0-.823-2.056A3.811,3.811,0,0,0,20.48,2.982a25.441,25.441,0,0,0-5.724-.9c-.06,0-.113-.013-.172-.013V2.08C13.8,2.033,12.965,2,12.037,2ZM5.742,4.222a6.983,6.983,0,0,0-.484.856A5.848,5.848,0,0,0,4.7,7.094h-2V6.245a1.618,1.618,0,0,1,.424-.962,2.214,2.214,0,0,1,.968-.67A16.291,16.291,0,0,1,5.742,4.222Zm12.589,0a16.925,16.925,0,0,1,1.658.391,2.235,2.235,0,0,1,.962.67,1.618,1.618,0,0,1,.424.962v.849h-2a5.952,5.952,0,0,0-.55-2.016A8.044,8.044,0,0,0,18.331,4.222ZM7.792,8.792v1.8l-.08.053a18.457,18.457,0,0,0-2.454,2.242c-1.234,1.34-2.56,3.151-2.56,5.24v1.7a2.556,2.556,0,0,0,2.547,2.547H18.829a2.556,2.556,0,0,0,2.547-2.547v-1.7c0-2.089-1.326-3.9-2.554-5.24a18.736,18.736,0,0,0-2.461-2.242l-.08-.053v-1.8h-1.7v1.7H9.49v-1.7Zm.743,3.4h7a14.675,14.675,0,0,1,2.023,1.844c1.108,1.207,2.116,2.792,2.116,4.1v1.7a.838.838,0,0,1-.849.849H5.245a.838.838,0,0,1-.849-.849v-1.7c0-1.307,1.008-2.892,2.109-4.1A14.959,14.959,0,0,1,8.535,12.188Zm-.743,1.7v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm-6.792,3.4v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Z"
+                                transform="translate(-1 -2)" fill="#392c23" />
+                        </svg>
+                    </a>
+
+                    <a href="ask.html" class="nav-link text-center active  w-100 p-35">
+                        <svg id="icons8_help_2" xmlns="http://www.w3.org/2000/svg" width="22.074" height="22.074"
+                            viewBox="0 0 22.074 22.074">
+                            <path id="icons8_help_2-2" data-name="icons8_help_2"
+                                d="M12.037,1A11.037,11.037,0,1,1,1,12.037,11.054,11.054,0,0,1,12.037,1Zm0,1.7a9.339,9.339,0,1,0,9.339,9.339A9.327,9.327,0,0,0,12.037,2.7Zm-.1,3.4a3.979,3.979,0,0,1,3.734,3.94h-1.7a2.226,2.226,0,0,0-2.653-2.209A2.3,2.3,0,0,0,9.49,10.1,2.068,2.068,0,0,0,10.876,12a4.052,4.052,0,0,1,1.386.862,2.5,2.5,0,0,1,.623,1.725h-1.7c0-.385-.053-.444-.159-.557a3.135,3.135,0,0,0-.836-.478,3.859,3.859,0,0,1-2.4-3.4,3.961,3.961,0,0,1,3.243-4.006A4.639,4.639,0,0,1,11.937,6.094Zm.948,10.188v1.7h-1.7v-1.7Z"
+                                transform="translate(-1 -1)" fill="#cf2a45" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="info d-flex gap-3 align-items-center flex-column mb-3">
+                    <div class="text-black copyright">
+                        جميع الحقوق محفوظة لدى <span class="main-clr">بلدية غزة</span> &copy; 2021
+                    </div>
+
+                    <div class="social-links d-flex gap-1 flex-column">
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-twitter text-white fa-lg "></i>
+                        </a>
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-instagram text-white fa-lg "></i>
+                        </a>
+                        <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                            <i class="fa-brands fa-facebook text-white fa-lg "></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main d-flex gap-3 ">
+        <!-- side bar starts    -->
+        <div class="side-bar d-flex flex-column  justify-content-between w-fit white-clr">
+            <div class="links d-flex flex-column align-items-center">
+                <a href="index.html" class="nav-link text-center w-100 p-35">
+                    <svg id="icons8_home_1" xmlns="http://www.w3.org/2000/svg" width="24.926" height="21.53"
+                        viewBox="0 0 24.926 21.53">
+                        <path id="icons8_home_1-2" data-name="icons8_home_1"
+                            d="M13.123,1.32.66,12.888l1.154,1.247,1.121-1.041V22.85h8.49V14.36h3.4v8.49h8.49V13.094l1.121,1.041,1.154-1.247Zm0,2.308,8.49,7.893v9.631H16.519v-8.49H9.727v8.49H4.633V11.522Z"
+                            transform="translate(-0.66 -1.32)" fill="#392c23" />
+                    </svg>
+                </a>
+
+                <a href="mobile.html" class="nav-link text-center  w-100 p-35">
+                    <svg id="icons8_android" xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074"
+                        viewBox="0 0 15.282 22.074">
+                        <path id="icons8_android-2" data-name="icons8_android"
+                            d="M5.547,1A2.556,2.556,0,0,0,3,3.547v16.98a2.556,2.556,0,0,0,2.547,2.547H15.735a2.556,2.556,0,0,0,2.547-2.547V3.547A2.556,2.556,0,0,0,15.735,1Zm0,1.7H15.735a.838.838,0,0,1,.849.849v16.98a.838.838,0,0,1-.849.849H5.547a.838.838,0,0,1-.849-.849V3.547A.838.838,0,0,1,5.547,2.7ZM9.792,17.98v1.7h1.7v-1.7Z"
+                            transform="translate(-3 -1)" fill="#392c23" />
+                    </svg>
+                </a>
+
+                <a href="contact.html" class="nav-link text-center w-100 p-35">
+                    <svg id="icons8_telephone" xmlns="http://www.w3.org/2000/svg" width="22.074" height="20.376"
+                        viewBox="0 0 22.074 20.376">
+                        <path id="icons8_telephone-2" data-name="icons8_telephone"
+                            d="M12.037,2c-.929,0-1.764.033-2.547.08V2.066c-.06,0-.113.013-.172.013a25.44,25.44,0,0,0-5.724.9A3.811,3.811,0,0,0,1.822,4.189,3.206,3.206,0,0,0,1,6.245V8.792H6.107l.073-.769A7.961,7.961,0,0,1,6.8,5.781,4.037,4.037,0,0,1,7.832,4.355a2.352,2.352,0,0,1,1.141-.544c.113-.007.192-.02.312-.033.007,0,.013.007.02,0,.816-.046,1.725-.08,2.733-.08s1.917.033,2.733.08c.007.007.013,0,.02,0,.027.007.053.007.086.013.08,0,.146.013.226.02a2.352,2.352,0,0,1,1.141.544,4.035,4.035,0,0,1,1.035,1.426,7.959,7.959,0,0,1,.617,2.242l.066.769h5.114V6.245a3.206,3.206,0,0,0-.823-2.056A3.811,3.811,0,0,0,20.48,2.982a25.441,25.441,0,0,0-5.724-.9c-.06,0-.113-.013-.172-.013V2.08C13.8,2.033,12.965,2,12.037,2ZM5.742,4.222a6.983,6.983,0,0,0-.484.856A5.848,5.848,0,0,0,4.7,7.094h-2V6.245a1.618,1.618,0,0,1,.424-.962,2.214,2.214,0,0,1,.968-.67A16.291,16.291,0,0,1,5.742,4.222Zm12.589,0a16.925,16.925,0,0,1,1.658.391,2.235,2.235,0,0,1,.962.67,1.618,1.618,0,0,1,.424.962v.849h-2a5.952,5.952,0,0,0-.55-2.016A8.044,8.044,0,0,0,18.331,4.222ZM7.792,8.792v1.8l-.08.053a18.457,18.457,0,0,0-2.454,2.242c-1.234,1.34-2.56,3.151-2.56,5.24v1.7a2.556,2.556,0,0,0,2.547,2.547H18.829a2.556,2.556,0,0,0,2.547-2.547v-1.7c0-2.089-1.326-3.9-2.554-5.24a18.736,18.736,0,0,0-2.461-2.242l-.08-.053v-1.8h-1.7v1.7H9.49v-1.7Zm.743,3.4h7a14.675,14.675,0,0,1,2.023,1.844c1.108,1.207,2.116,2.792,2.116,4.1v1.7a.838.838,0,0,1-.849.849H5.245a.838.838,0,0,1-.849-.849v-1.7c0-1.307,1.008-2.892,2.109-4.1A14.959,14.959,0,0,1,8.535,12.188Zm-.743,1.7v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm-6.792,3.4v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Z"
+                            transform="translate(-1 -2)" fill="#392c23" />
+                    </svg>
+                </a>
+
+                <a href="ask.html" class="nav-link text-center active w-100 p-35">
+                    <svg id="icons8_help_2" xmlns="http://www.w3.org/2000/svg" width="22.074" height="22.074"
+                        viewBox="0 0 22.074 22.074">
+                        <path id="icons8_help_2-2" data-name="icons8_help_2"
+                            d="M12.037,1A11.037,11.037,0,1,1,1,12.037,11.054,11.054,0,0,1,12.037,1Zm0,1.7a9.339,9.339,0,1,0,9.339,9.339A9.327,9.327,0,0,0,12.037,2.7Zm-.1,3.4a3.979,3.979,0,0,1,3.734,3.94h-1.7a2.226,2.226,0,0,0-2.653-2.209A2.3,2.3,0,0,0,9.49,10.1,2.068,2.068,0,0,0,10.876,12a4.052,4.052,0,0,1,1.386.862,2.5,2.5,0,0,1,.623,1.725h-1.7c0-.385-.053-.444-.159-.557a3.135,3.135,0,0,0-.836-.478,3.859,3.859,0,0,1-2.4-3.4,3.961,3.961,0,0,1,3.243-4.006A4.639,4.639,0,0,1,11.937,6.094Zm.948,10.188v1.7h-1.7v-1.7Z"
+                            transform="translate(-1 -1)" fill="#cf2a45" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="info d-flex gap-3 align-items-center flex-column mb-3">
+                <div class="text-black copyright">
+                    جميع الحقوق محفوظة لدى <span class="main-clr">بلدية غزة</span> &copy; 2021
+                </div>
+
+                <div class="social-links d-flex gap-1 flex-column">
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-twitter text-white fa-lg "></i>
+                    </a>
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-instagram text-white fa-lg "></i>
+                    </a>
+                    <a href="" class="d-flex justify-content-center align-content-center bg-second p-2">
+                        <i class="fa-brands fa-facebook text-white fa-lg "></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- main content starts -->
+        <div class="main-content active position-relative">
+
+            <img class="tree-left position-absolute" src="images/tree.svg" alt="">
+            <a class="messenger rounded-circle bg-second p-3 z-2 position-absolute" href="">
+                <img class="img-fluid" src="images/messenger.svg" alt="">
+            </a>
+
+            <div class="container-fluid px-0">
+                <div class="container d-xl-none d-flex justify-content-between  align-items-center pt-3">
+                    <button class="btn bg-second text-white position-relative z-2 d-block d-xl-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <div class="mt-1">القائمة</div>
+                    </button>
+                    <div class="dropdown position-relative z-2">
+                        <button class="language me-0 me-xl-3 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            العربية
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item text-center" href="#">العربية</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" href="#">الإنجليزية</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-xl-flex d-none flex-wrap align-items-center position-relative header ">
+                    <div
+                        class="d-flex gap-2 col-xl  justify-content-xl-start justify-content-between align-items-center">
+                        <button class="btn bg-second text-white position-relative z-2 d-block d-xl-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            القائمة
+                        </button>
+                        <div class="header-links d-flex gap-2">
+                            <a href=""><img src="images/user.svg" alt=""></a>
+                            <a href=""><img src="images/search.svg" alt=""></a>
+                            <a href=""><img src="images/world.svg" alt=""></a>
+                        </div>
+
+                        <div class="dropdown position-relative z-2">
+                            <button class="language me-0 me-xl-3 dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                العربية
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item text-center" href="#">العربية</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-center" href="#">الإنجليزية</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="logo text-center mt-xl-0 mt-3 col-xl">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <div
+                        class="text-black gap-4 flex-md-row flex-column d-flex mt-xl-0 mt-5 align-items-center col-xl justify-content-xl-end justify-content-center">
+                        <div class="date gap-2 d-flex align-items-center">
+                            <div class=""> الإثنين 1 محرم 1443 - 09 أغسطس 2021 | 11:46 صباحا</div>
+                            <img src="images/clock.svg" alt="">
+                        </div>
+                        <div class="temp gap-2 d-flex align-items-center">
+                            <div>+42°C</div>
+                            <img class="img-fluid" src="images/sun.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container inner-content ask">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="border bg-white text-center p-3 rounded-circle">
+                            <svg id="svgexport-6_9_" data-name="svgexport-6 (9)" xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Path_25757" data-name="Path 25757"
+                                    d="M32,21.656a10.367,10.367,0,0,0-7.575-9.967A12.218,12.218,0,1,0,1.694,18.429L.045,24.392l5.963-1.649a12.173,12.173,0,0,0,5.68,1.682,10.347,10.347,0,0,0,15.231,6.137l5.035,1.393-1.393-5.035A10.307,10.307,0,0,0,32,21.656Zm-25.7-.94-3.57.988.988-3.57L3.5,17.781a10.34,10.34,0,1,1,3.159,3.159Zm22.962,8.55-2.649-.733-.354.23a8.472,8.472,0,0,1-12.636-4.407A12.242,12.242,0,0,0,24.356,13.627a8.472,8.472,0,0,1,4.407,12.636l-.23.354Zm0,0"
+                                    fill="#392c23" />
+                                <path id="Path_25758" data-name="Path 25758" d="M182.387,271H180.5v1.887h1.887Zm0,0"
+                                    transform="translate(-169.217 -254.069)" fill="#3ec4b5" />
+                                <path id="Path_25759" data-name="Path 25759"
+                                    d="M137.387,93.774A1.868,1.868,0,0,0,138,95.167l2.216,2.028v2.3H138.33V98.026l-1.6-1.467a3.774,3.774,0,1,1,6.32-2.785H141.16a1.887,1.887,0,1,0-3.774,0Zm0,0"
+                                    transform="translate(-127.048 -84.39)" fill="#3ec4b5" />
+                            </svg>
+                        </div>
+                        <div class="main-clr bold">الأسئلة الشائعة</div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <div class="border arrow-container rounded-circle">
+                            <div class="arrow  arrow-right"></div>
+                        </div>
+                        <div class="border arrow-container border-dark-subtle rounded-circle">
+                            <div class="arrow active arrow-left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-black-50 mt-3">هنا بعض الأسئلة الشائعة وإجاباتها</div>
+
+                <div class="search-bar border-bottom d-flex justify-content-between">
+                    <input type="text" class="border-0 w-100 bg-transparent mt-2 pb-2" placeholder="ابحث في الأسئلة">
+                    <img src="images/search.svg" alt="">
+                </div>
+
+                <div class="row mt-5 gap-4">
+                    <div class="col-lg col-12">
+                        <div data-question="questionOne" class="question currentQuestion p-3">هل يتم مطالبتي بالمبالغ
+                            المستحقة على
+                            والدي؟</div>
+                        <div data-question="questionTwo" class="question p-3 mt-3">كيف يمكنني البدء في إجراءات تقديم
+                            المعاملة؟</div>
+                        <div data-question="questionThree" class="question p-3 mt-3">كيف يمكنني البدء في إجراءات تقديم
+                            المعاملة؟</div>
+                        <div data-question="questionFour" class="question p-3 mt-3">هل يمكنني تقديم معاملة نيابة عن
+                            والدي أو شخص اخر؟
+                        </div>
+                        <div data-question="questionFive" class="question p-3 mt-3">ما هي المدة الزمنية للحصول على
+                            الخدمة؟</div>
+                    </div>
+                    <div class="col-lg col-12">
+                        <!-- answer for question 1 -->
+                        <div data-answer="questionOne" class="answer activeAnswer bg-white">
+                            <div class="text-black bold">الإجابة:</div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">1</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> تحتاج لتجهيز الاوراق والمستندات المطلوبة حسب نوع
+                                    المعاملة ثم
+                                    التوجه الى دائرة خدمات الجمهور او
+                                    .عن طريق نظام الخدمات الالكتروني لتدقيم المطلب</div>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">2</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> يتم المطالبة بالمستحقات المتراكمة على الوالد في حال
+                                    وفاته وان تكون المستحقات تخص المكان المراد الحصول على الخدمة فيه
+                                </div>
+                            </div>
+                        </div>
+                        <!-- answer for question 1 -->
+
+                          <!-- answer for question 2 -->
+                          <div data-answer="questionTwo" class="answer bg-white">
+                            <div class="text-black bold">الإجابة:</div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">1</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> تحتاج لتجهيز الاوراق والمستندات المطلوبة حسب نوع
+                                    المعاملة ثم
+                                    التوجه الى دائرة خدمات الجمهور او
+                                    .عن طريق نظام الخدمات الالكتروني لتدقيم المطلب</div>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">2</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> يتم المطالبة بالمستحقات المتراكمة على الوالد في حال
+                                    وفاته وان تكون المستحقات تخص المكان المراد الحصول على الخدمة فيه
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">3</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> يتم المطالبة بالمستحقات المتراكمة على الوالد في حال
+                                    وفاته وان تكون المستحقات تخص المكان المراد الحصول على الخدمة فيه
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <div class="bold bg-white border rounded-circle py-2 px-3">
+                                    <div class="mt-1">4</div>
+                                </div>
+                                <div class="text-black-50 fs-15"> يتم المطالبة بالمستحقات المتراكمة على الوالد في حال
+                                    وفاته وان تكون المستحقات تخص المكان المراد الحصول على الخدمة فيه
+                                </div>
+                            </div>
+                        </div>
+                        <!-- answer for question 2 -->
+
+                    </div>
+                </div>
+                <div class="d-flex gap-2 mt-4 justify-content-center">
+                    <div class="d-flex border bg-white rounded-1 p-1 px-2 pe-3 align-items-center">
+                        <div class="prev before"></div>
+                        <div class="prev"></div>
+                    </div>
+                    <div class="numbers d-flex gap-2">
+                        <div class="bg-second bold rounded-1 text-white p-1 px-3">
+                            <div class="mt-1">1</div>
+                        </div>
+                        <div class="bg-white border bold rounded-1 text-black-50 p-1 px-3">
+                            <div class="mt-1">2</div>
+                        </div>
+                        <div class="bg-white border bold rounded-1 text-black-50 p-1 px-3">
+                            <div class="mt-1">3</div>
+                        </div>
+                        <div class="bg-white border bold rounded-1 text-black-50 p-1 px-3">
+                            <div class="mt-1">4</div>
+                        </div>
+                        <div class="bg-white border bold rounded-1 text-black-50 p-1 px-3">
+                            <div class="mt-1">5</div>
+                        </div>
+                    </div>
+                    <div class="d-flex border bg-white rounded-1 p-1 px-2  ps-3 align-items-center">
+                        <div class="next"></div>
+                        <div class="next after"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid sections-link mt-0 position-relative z-1 bg-white border-top">
+                <div class="d-flex flex-wrap">
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="municipal.html" class="nav-link text-center py-4 service">البلدية</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">المدينة</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">الخدمات</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center py-4 service">المشاريع</a>
+                    </div>
+                    <div class="col-lg col-md-6 col-12">
+                        <a href="" class="nav-link text-center  py-4">المركز الإعلامي</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        const answers = document.querySelectorAll('.answer');
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                questions.forEach((question) => {
+                    question.classList.remove('currentQuestion')
+                })
+                question.classList.add('currentQuestion');
+
+                answers.forEach((answer) => {
+                    if (question.getAttribute('data-question') === answer.getAttribute('data-answer')) {
+                        answer.classList.add('activeAnswer');
+                    }else {
+                        answer.classList.remove('activeAnswer');
+                    }
+                })
+
+            })
+        })
+    </script>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
